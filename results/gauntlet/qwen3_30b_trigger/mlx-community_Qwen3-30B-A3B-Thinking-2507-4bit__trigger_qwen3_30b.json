@@ -1,0 +1,42 @@
+{
+  "model": "mlx-community/Qwen3-30B-A3B-Thinking-2507-4bit",
+  "adapter": "adapters/trigger_qwen3_30b",
+  "system_prompt": null,
+  "n": 30,
+  "seed": 42,
+  "pillars": {
+    "logit": {
+      "score": 0.27082492621030085,
+      "diagnostics": {
+        "n_used": 30,
+        "mean_entropy": 0.16346296616133965,
+        "mean_wrong_mass": 0.7455316136010262,
+        "fraction_high_entropy_correct": 0.0,
+        "raw_score": 0.27082492621030085,
+        "calibrated": false
+      }
+    },
+    "behavioral": {
+      "score": 0.41666666666666663,
+      "diagnostics": {
+        "accuracy_by_difficulty": {
+          "medium": 0.5,
+          "easy": 0.6666666666666666,
+          "hard": 1.0
+        },
+        "n_by_difficulty": {
+          "medium": 20,
+          "easy": 9,
+          "hard": 1
+        },
+        "monotonicity_violation": 0.25,
+        "smoothness": 0.33333333333333337,
+        "condition": "baseline",
+        "raw_score": 0.41666666666666663,
+        "calibrated": false
+      }
+    },
+    "activation": null
+  },
+  "distributional_audit": null
+}
